@@ -10,7 +10,7 @@ while int((userDate-baseDate).days)>116:
 	userDate = datetime.strptime(userDate, "%Y,%m,%d")
 	weekday = int((userDate-baseDate).days)%7-1
 
-print (userDate-baseDate).days
+#print (userDate-baseDate).days
 
 rideTime = int(raw_input("Ride time (24 hour without minutes): "))*60
 
