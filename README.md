@@ -1,5 +1,7 @@
 # 台灣高鐵大學生優惠車次查詢
+
 需求：Python 2.6 或更新<br>
+<br>
 高鐵提供大學生優惠五折、七折車次<br>
 （http://www.thsrc.com.tw/tw/Article/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9）<br>
 但網頁時刻表並沒有查詢功能，要找出適合車次常常看到眼花<br>
