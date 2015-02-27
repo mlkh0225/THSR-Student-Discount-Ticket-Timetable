@@ -208,15 +208,16 @@ counter = 0
 if specialTable == 0:
 	for x in range(0, len(week[weekday])):
 		if (week[weekday][x][stationEnd]-week[weekday][x][stationStart] > 0) & (week[weekday][x][stationStart] > rideTime) & (week[weekday][x][stationEnd] > 0) & (week[weekday][x][stationStart]<(rideTime+rideTimeRange)):
-			print '{:>4}'.format(str(week[weekday][x][0]))+" "+'{:>8}'.format(stations[(stationStart-1)])+"("+'{:>2}'.format(str(week[weekday][x][stationStart]/60))+":"+'{:>2}'.format(str(week[weekday][x][stationStart]%60))+")  -> "+'{:>8}'.format(stations[(stationEnd-1)])+"("+'{:>2}'.format(str(week[weekday][x][stationEnd]/60))+":"+'{:>2}'.format(str(week[weekday][x][stationEnd]%60))+")  Discount: "+week[weekday][x][9]
+			print '{:>4}'.format(str(week[weekday][x][0]))+" | "+'{:>8}'.format(stations[(stationStart-1)])+"("+'{:>2}'.format(str(week[weekday][x][stationStart]/60))+":"+'{:>2}'.format(str(week[weekday][x][stationStart]%60))+")  -> "+'{:>8}'.format(stations[(stationEnd-1)])+"("+'{:>2}'.format(str(week[weekday][x][stationEnd]/60)) + ":" + '{:>2}'.format(str(week[weekday][x][stationEnd]%60)) + ") | Travel time: " + '{:>3}'.format(str(week[weekday][x][stationEnd]-week[weekday][x][stationStart])) + "mins | Discount: " + week[weekday][x][9]
 			counter=counter+1
 
 elif table288 == 1:
-	print "228 Timetable"
+	print '{:>45}'.format("228 Timetable")
+	print ""
 	for x in range(0, len(week228[weekday])):
-			if (week228[weekday][x][stationEnd]-week228[weekday][x][stationStart] > 0) & (week228[weekday][x][stationStart] > rideTime) & (week228[weekday][x][stationEnd] > 0) & (week228[weekday][x][stationStart]<(rideTime+rideTimeRange)):
-				print '{:>4}'.format(str(week228[weekday][x][0]))+" "+'{:>8}'.format(stations[(stationStart-1)])+"("+'{:>2}'.format(str(week228[weekday][x][stationStart]/60))+":"+'{:>2}'.format(str(week228[weekday][x][stationStart]%60))+")  -> "+'{:>8}'.format(stations[(stationEnd-1)])+"("+'{:>2}'.format(str(week228[weekday][x][stationEnd]/60))+":"+'{:>2}'.format(str(week228[weekday][x][stationEnd]%60))+")  Discount: "+week228[weekday][x][9]
-				counter=counter+1
+		if (week228[weekday][x][stationEnd]-week228[weekday][x][stationStart] > 0) & (week228[weekday][x][stationStart] > rideTime) & (week228[weekday][x][stationEnd] > 0) & (week228[weekday][x][stationStart]<(rideTime+rideTimeRange)):
+			print '{:>4}'.format(str(week228[weekday][x][0]))+" | "+'{:>8}'.format(stations[(stationStart-1)])+"("+'{:>2}'.format(str(week228[weekday][x][stationStart]/60))+":"+'{:>2}'.format(str(week228[weekday][x][stationStart]%60))+")  -> "+'{:>8}'.format(stations[(stationEnd-1)])+"("+'{:>2}'.format(str(week228[weekday][x][stationEnd]/60)) + ":" + '{:>2}'.format(str(week228[weekday][x][stationEnd]%60)) + ") | Travel time: " + '{:>3}'.format(str(week228[weekday][x][stationEnd]-week228[weekday][x][stationStart])) + "mins | Discount: " + week228[weekday][x][9]
+			counter=counter+1
 
 if counter == 0:
 	print "No available train, try again."
