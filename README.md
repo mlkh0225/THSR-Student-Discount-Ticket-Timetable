@@ -1,5 +1,8 @@
 # 台灣高鐵大學生優惠車次查詢
-
+<br>
+## 高鐵目前已經提供線上訂票系統進行大學生優惠車次訂票，這個專案不會再更新
+高鐵<a href="https://irs.thsrc.com.tw/IMINT/?student=university">大學生優惠</a>訂票專區<br>
+<br>
 需求：Python 2.6 或更新<br>
 <br>
 高鐵提供大學生優惠五折、七折車次<br>
@@ -13,16 +16,3 @@
 4、起站代號<br>
 5、訖站代號<br>
 提供符合的車次<br>
-<br>
-以下為執行結果：<br>
-Ride date (Ex:2015/02/25): 2015/3/30<br>
-Ride time (24 hour without minutes): 9<br>
-Show trains in next x hours: 3<br>
-Station number: 1-Taipei, 2-Banqiao, 3-Taoyuan, 4-Hsinchu, 5-Taichung, 6-Chiayi, 7-Tainan, 8-Zuoying<br>
-From station number: 2<br>
-To station number: 8<br>
- 123 |  Banqiao( 9: 2)  ->  Zuoying(10:30) | Travel time:  88mins | Discount: 70%<br>
-1627 |  Banqiao( 9:26)  ->  Zuoying(11:18) | Travel time: 112mins | Discount: 50%<br>
- 629 |  Banqiao( 9:44)  ->  Zuoying(11:36) | Travel time: 112mins | Discount: 50%<br>
- 131 |  Banqiao(10: 2)  ->  Zuoying(11:30) | Travel time:  88mins | Discount: 70%<br>
- 633 |  Banqiao(10: 8)  ->  Zuoying(12: 0) | Travel time: 112mins | Discount: 70%<br>
