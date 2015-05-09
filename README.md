@@ -1,7 +1,7 @@
-# 台灣高鐵大學生優惠車次查詢
-<br>
 ## 高鐵目前已經提供線上訂票系統進行大學生優惠車次訂票，這個專案不會再更新
 高鐵<a href="https://irs.thsrc.com.tw/IMINT/?student=university">大學生優惠</a>訂票專區<br>
+<br>
+# 台灣高鐵大學生優惠車次查詢
 <br>
 需求：Python 2.6 或更新<br>
 <br>
